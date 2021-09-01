@@ -64,7 +64,8 @@
                         </a>
                     </li>
                     <li>
-                        <form class="navbar-form" action="" method="get" role="search">
+                        <form class="navbar-form" action="" method="POST" role="search">
+                            {% csrf_token %}
                             <div class="input-group add-on">
                                 <input class="form-control" placeholder="Search" id="srch-term" type="text" name="q" height=20px>
                                 <div class="input-group-btn">

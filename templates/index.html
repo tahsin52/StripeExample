@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{% csrf_token %}
+    {% for product in products %}
+        {{ product.title }}
+        {{ product.price }}
+    {% endfor %}
+
 {% endblock %}

@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from Stripe.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name='index'),
     path('account/', include('accounts.urls')),
     path('products/', include('product.urls')),
+    path('cart/', include('cart.urls')),
+    path('search/', include('search.urls')),
 ]
