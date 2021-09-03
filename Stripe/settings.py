@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'product',
     'cart',
     'search',
+    'checkout',
+    'order',
 ]
 
 MIDDLEWARE = [
@@ -106,7 +108,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+#
+# AUTHENTICATION_BACKENDS = [
+#     'django.contrib.auth.backends.ModelBackend',
+# ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -132,6 +137,10 @@ STATICFILES_DIRS = (
    )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#STRIPE
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
