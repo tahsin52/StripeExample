@@ -9,6 +9,6 @@
 4 - You can list or add products according to their categories. <br>
 
 ## What to do?
-# python manage.py makemigrations --> python manage.py migrate --> python manage.py createsuperuser <br>
-# Open a env file and write your 'stripe' keys in it, go to settings and you will see it there. <br> To open a free stripe account and get to the keys [STRIPE](https://dashboard.stripe.com/test/apikeys)<br>
-# Add a product from the panel and make the payment. <br>
+1 - python manage.py makemigrations --> python manage.py migrate --> python manage.py createsuperuser <br>
+2 - Open a env file and write your 'stripe' keys in it, go to settings and you will see it there. <br> To open a free stripe account and get to the keys [STRIPE](https://dashboard.stripe.com/test/apikeys)<br>
+3 - Add a product from the panel and make the payment. <br>
